@@ -13,7 +13,7 @@ app.get('/', (req, res) => {
 })
 
 app.get('/home', (req, res) => {
-    res.sendFile("/public/Home/home.html", {root: __dirname})
+    res.sendFile("index.html", {root: __dirname})
 })
 
 app.get('/about', (req, res) => {
