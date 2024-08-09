@@ -9,14 +9,14 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 app.get('/', (req, res) => {
-    res.redirect("/home")
+    res.redirect("Portfolio-website/home")
 })
 
-app.get('/home', (req, res) => {
+app.get('Portfolio-website/home', (req, res) => {
     res.sendFile("index.html", {root: __dirname})
 })
 
-app.get('/about', (req, res) => {
+app.get('Portfolio-website/about', (req, res) => {
     res.sendFile("public/About/about.html", {root: __dirname})
 })
 
