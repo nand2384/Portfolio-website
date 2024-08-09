@@ -16,8 +16,8 @@ app.get('/Portfolio-website/home', (req, res) => {
     res.sendFile("index.html", {root: __dirname})
 })
 
-app.get('Portfolio-website/about', (req, res) => {
-    res.sendFile("public/About/about.html", {root: __dirname})
+app.get('/about', (req, res) => {
+    res.sendFile("about.html", {root: __dirname})
 })
 
 app.listen(port, () => {
