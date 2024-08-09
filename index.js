@@ -20,6 +20,14 @@ app.get('/about', (req, res) => {
     res.sendFile("about.html", {root: __dirname})
 })
 
+app.get('/projects', (req, res) => {
+    res.sendFile("projects.html", {root: __dirname})
+})
+
+app.get('/contact', (req, res) => {
+    res.sendFile("contact.html", {root: __dirname})
+})
+
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`)
 })
