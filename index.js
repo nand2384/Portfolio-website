@@ -17,7 +17,7 @@ app.get('/home', (req, res) => {
 })
 
 app.get('/about', (req, res) => {
-    res.sendFile("/public/About/about.html", {root: __dirname})
+    res.sendFile("public/About/about.html", {root: __dirname})
 })
 
 app.listen(port, () => {
