@@ -5,6 +5,19 @@
     scroll-behavior: smooth;
 }
 
+body::-webkit-scrollbar {
+    width: 5px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #faf0dc;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #A67A5B;
+    border-radius: 10px;
+}
+
 :root {
     --primary-color: #faf0dc;
 }
