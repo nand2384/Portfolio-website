@@ -85,4 +85,8 @@ function sendMessage() {
       })
         .then((res) => res.json())
         .catch((err) => console.log(err));
+
+        document.getElementById("name").value = "";
+        document.getElementById("email").value = "";
+        document.getElementById("message").value = "";
 }
