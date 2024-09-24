@@ -1,6 +1,7 @@
 require('dotenv').config()
 const express = require('express')
 const bodyParser = require('body-parser')
+const mongoose = require('mongoose')
 const app = express()
 const port = process.env.PORT || 8080
 
@@ -31,3 +32,33 @@ app.get('/contact', (req, res) => {
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`)
 })
+
+mongoose.connect('mongodb://localhost:27017/Portfolio', {
+}).then((dbo) => {
+    console.log("DB connected");
+}, (err) => {
+    console.log("error");
+});;
+
+const messageSchema = new mongoose.Schema({
+    name: {type: String},
+    email: {type: String},
+    message: {type: String}
+});
+
+const Message = mongoose.model('Messages', messageSchema);
+
+
+app.post('/send', async (req, res) => {
+    try {
+        console.log(req.body);
+        const newMessage = await Message.create({
+            name: req.body.name,
+            email: req.body.email,
+            message: req.body.message,
+        });
+        res.json(newMessage);
+    } catch(err) {
+        res.status(500).json({ message: err.message});
+    }
+});

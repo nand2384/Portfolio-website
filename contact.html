@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects</title>
+    <title>Contact Me</title>
     <link rel="stylesheet" href="public/Contact/contact.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,10 +23,32 @@
             <div class="bar1"></div>
             <div class="bar2"></div>
             <div class="bar3"></div>
-          </div>
+        </div>
     </nav>
     <section class="main">
-        <h2>This page is under construction!</h2>
+    <div class="heading">
+        <span>CONTACT ME</span>
+    </div>
+        <div class="form-cont">
+            <form id="form" action="/send">
+                <label for="name" class="label">Name: <span id="nameErr" style="display: none;">*</span></label>
+                <input type="text" id="name" class="form-element">
+                <label for="email" class="label">Email: <span id="emailErr" style="display: none;">*</span></label>
+                <input type="email" name="email" id="email" class="form-element">
+                <label for="message" class="label">Message: <span id="messageErr" style="display: none;">*</span></label>
+                <textarea name="message" id="message" rows="10" cols="50" class="form-element"></textarea>
+                <button type="button" id="sendBtn" onclick="sendMessage()">Send Message</button>
+            </form>
+
+            <div id="contact-info">&#11162; &#9993; <a href="mailto:nand2384@gmail.com">nand2384@gmail.com</a></div>
+        </div>
+
+        <div class="promote-box">
+            <a href="https://www.linkedin.com/in/nand-patel-2308np6409/" target="_blank"><img class="promote-icon" src="public/Images/linkedin.png" alt="linkedin-icon"></a>
+            <a href="https://github.com/nand2384" target="_blank"><img class="promote-icon" src="public/Images/github-sign.png" alt="github-icon"></a>
+            <a href="https://x.com/Nand2384" target="_blank"><img class="promote-icon" src="public/Images/twitter.png" alt="twitter-icon"></a>
+            <a href="https://www.instagram.com/nand_2384/" target="_blank"><img class="promote-icon" src="public/Images/instagram.png" alt="instagram-icon"></a>
+        </div>
 
         <div class="nav-items-cont-mob" style="display: none;">
             <ul class="nav-items-ul-mob">
