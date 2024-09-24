@@ -1,6 +1,3 @@
-
-alert("This page is still under construction!");
-
 function getWidth() {
     let width = window.innerWidth;
     let height = window.innerHeight;

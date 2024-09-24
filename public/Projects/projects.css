@@ -38,15 +38,18 @@ a {
     height: 100vh;
     overflow-y: hidden;
     display: flex;
-    justify-content: center;
-    margin-top: 100px;
+    flex-direction: column;
+    align-items: center;
 }
 
 .main h2 {
-    font-family: "Teko", sans-serif;
+    font-family: "Josefin Sans", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-    font-size: 3rem;
+    font-weight: 400;
+    font-size: 2rem;
+    margin-top: 50px;
+    text-align: center;
 }
 
 .bold {
@@ -126,6 +129,35 @@ a {
 
 .nav-drop-mob {
     display: none;
+}
+
+.heading {
+    display: flex;
+    height: fit-content;
+    justify-content: center;
+}
+
+.heading>span {
+    margin-top: 2.2rem;
+    font-family: "Teko", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: black;
+    font-weight: 800;
+    font-size: 2em;
+    height: fit-content;
+}
+
+.heading>span::after {
+    content: '';
+    display: block;
+    width: 50%;
+    margin: 6px auto;
+    height: 4px;
+    background-color: black;
+    opacity: 1;
+    border-radius: 10px;
+    background-color: #A67A5B;
 }
 
 @media (max-width: 626px) {
