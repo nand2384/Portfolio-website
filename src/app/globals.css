@@ -1,0 +1,125 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #fbf0de;
+  --ink: #171717;
+  --card-pink: #f6c9de;
+  --card-mint: #cfe8d9;
+  --accent-coral: #ff5a36;
+  --accent-yellow: #ffd23f;
+  --shadow-hard: 6px 6px 0 0 var(--ink);
+  scroll-padding-top: 5rem;
+}
+
+[data-mode="dark"] {
+  --bg: #1a1714;
+  --ink: #f5efe3;
+  --card-pink: #6b3350;
+  --card-mint: #2c5245;
+  --accent-coral: #ff6b45;
+  --accent-yellow: #ffd23f;
+}
+
+@theme inline {
+  --color-surface: var(--bg);
+  --color-ink: var(--ink);
+  --color-card-pink: var(--card-pink);
+  --color-card-mint: var(--card-mint);
+  --color-accent-coral: var(--accent-coral);
+  --color-accent-yellow: var(--accent-yellow);
+  --font-sans: var(--font-inter);
+  --font-heading: var(--font-space-grotesk);
+  --font-mono: var(--font-ibm-plex-mono);
+}
+
+html {
+  scroll-padding-top: 5rem;
+}
+
+body {
+  min-height: 100vh;
+}
+
+.mdx-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  font-size: 1rem;
+  line-height: 1.75;
+  overflow-wrap: break-word;
+}
+
+.mdx-content :where(h2, h3) {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  line-height: 1.25;
+  margin-top: 0.5rem;
+}
+
+.mdx-content h2 {
+  font-size: 1.5rem;
+}
+
+.mdx-content h3 {
+  font-size: 1.25rem;
+}
+
+.mdx-content :where(ul, ol) {
+  padding-left: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.mdx-content ul {
+  list-style: disc;
+}
+
+.mdx-content ol {
+  list-style: decimal;
+}
+
+.mdx-content a {
+  color: var(--accent-coral);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.mdx-content blockquote {
+  border-left: 2px solid var(--ink);
+  padding-left: 1rem;
+  color: color-mix(in srgb, var(--ink) 80%, transparent);
+}
+
+.mdx-content code {
+  font-family: var(--font-mono);
+  font-size: 0.875em;
+  background: var(--card-mint);
+  border: 2px solid var(--ink);
+  border-radius: 4px;
+  padding: 0.125rem 0.375rem;
+}
+
+.mdx-content pre {
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  background: var(--bg);
+  border: 2px solid var(--ink);
+  border-radius: 8px;
+  padding: 1rem;
+  overflow-x: auto;
+  box-shadow: var(--shadow-hard);
+}
+
+.mdx-content pre code {
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.mdx-content img {
+  border: 2px solid var(--ink);
+  border-radius: 8px;
+  max-width: 100%;
+  height: auto;
+}
