@@ -36,6 +36,9 @@ export default function RootLayout({
       <body
         className={`${spaceGrotesk.variable} ${ibmPlexMono.variable} ${inter.variable} bg-surface font-sans text-ink antialiased`}
       >
+        <a href="#main-content" className="skip-link">
+          Skip to content
+        </a>
         <Providers>
           <Toaster position="top-center" richColors />
           {children}

@@ -7,6 +7,11 @@
   --card-mint: #cfe8d9;
   --accent-coral: #ff5a36;
   --accent-yellow: #ffd23f;
+  /* WCAG-AA-safe variant of accent-coral, for small text/borders/focus rings on --bg (raw accent-coral is 2.75:1 there) */
+  --label: #b33f26;
+  /* Fixed dark text color for content on accent-yellow chips. accent-yellow is intentionally identical in both
+     modes, but --ink flips light/dark between modes, so it can't be used there without breaking contrast in dark mode. */
+  --ink-on-accent: #171717;
   --shadow-hard: 6px 6px 0 0 var(--ink);
   scroll-padding-top: 5rem;
 }
@@ -18,6 +23,7 @@
   --card-mint: #2c5245;
   --accent-coral: #ff6b45;
   --accent-yellow: #ffd23f;
+  --label: #ff6b45;
 }
 
 @theme inline {
@@ -27,6 +33,8 @@
   --color-card-mint: var(--card-mint);
   --color-accent-coral: var(--accent-coral);
   --color-accent-yellow: var(--accent-yellow);
+  --color-label: var(--label);
+  --color-on-accent: var(--ink-on-accent);
   --font-sans: var(--font-inter);
   --font-heading: var(--font-space-grotesk);
   --font-mono: var(--font-ibm-plex-mono);
@@ -38,6 +46,53 @@ html {
 
 body {
   min-height: 100vh;
+}
+
+a,
+button,
+input,
+textarea,
+[tabindex] {
+  outline-offset: 3px;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid var(--label);
+  outline-offset: 3px;
+}
+
+.skip-link {
+  position: fixed;
+  top: -4rem;
+  left: 1rem;
+  z-index: 100;
+  border: 2px solid var(--ink);
+  border-radius: 8px;
+  background: var(--accent-yellow);
+  color: var(--ink-on-accent);
+  padding: 0.5rem 1rem;
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  transition: top 0.15s;
+}
+
+.skip-link:focus {
+  top: 1rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
 
 .mdx-content {
@@ -80,7 +135,7 @@ body {
 }
 
 .mdx-content a {
-  color: var(--accent-coral);
+  color: var(--label);
   text-decoration: underline;
   text-underline-offset: 2px;
 }

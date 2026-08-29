@@ -10,7 +10,7 @@ export function ProjectDetailContent({ project }: { project: Project }) {
           {project.tags.map((tag) => (
             <span
               key={tag}
-              className="rounded-md border-2 border-ink bg-accent-yellow px-2 py-1 font-mono text-xs uppercase"
+              className="rounded-md border-2 border-ink bg-accent-yellow px-2 py-1 font-mono text-xs uppercase text-on-accent"
             >
               {tag}
             </span>
@@ -73,7 +73,7 @@ export function ProjectDetailContent({ project }: { project: Project }) {
 
       <div className="grid gap-6 border-t-2 border-ink pt-8 md:grid-cols-3">
         <div>
-          <h2 className="font-mono text-xs uppercase tracking-wide text-accent-coral">
+          <h2 className="font-mono text-xs uppercase tracking-wide text-label">
             Problem
           </h2>
           <p className="mt-2 text-sm text-ink/80">
@@ -81,7 +81,7 @@ export function ProjectDetailContent({ project }: { project: Project }) {
           </p>
         </div>
         <div>
-          <h2 className="font-mono text-xs uppercase tracking-wide text-accent-coral">
+          <h2 className="font-mono text-xs uppercase tracking-wide text-label">
             Approach
           </h2>
           <p className="mt-2 text-sm text-ink/80">
@@ -89,7 +89,7 @@ export function ProjectDetailContent({ project }: { project: Project }) {
           </p>
         </div>
         <div>
-          <h2 className="font-mono text-xs uppercase tracking-wide text-accent-coral">
+          <h2 className="font-mono text-xs uppercase tracking-wide text-label">
             Outcome
           </h2>
           <p className="mt-2 text-sm text-ink/80">

@@ -63,12 +63,12 @@ export function SiteNav() {
 
   const linkClass = (active: boolean) =>
     `font-mono text-sm uppercase tracking-wide transition-colors ${
-      active ? "text-accent-coral" : "text-ink/70 hover:text-ink"
+      active ? "text-label" : "text-ink/70 hover:text-ink"
     }`;
 
   const mobileLinkClass = (active: boolean) =>
     `rounded-lg px-3 py-3 text-left font-mono text-sm uppercase tracking-wide ${
-      active ? "text-accent-coral" : "text-ink/70"
+      active ? "text-label" : "text-ink/70"
     }`;
 
   const renderLink = (link: NavLink, mobile: boolean) => {

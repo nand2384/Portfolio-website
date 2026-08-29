@@ -42,7 +42,7 @@ export default async function PostPage({ params }: PageProps) {
   return (
     <>
       <SiteNav />
-      <main className="px-6 pb-24 pt-32">
+      <main id="main-content" className="px-6 pb-24 pt-32">
         <article className="mx-auto max-w-2xl">
           <Link
             href="/writing"
@@ -53,7 +53,7 @@ export default async function PostPage({ params }: PageProps) {
           </Link>
 
           <div className="mb-8 flex flex-col gap-3">
-            <div className="flex flex-wrap items-center gap-2 font-mono text-xs uppercase tracking-wide text-ink/60">
+            <div className="flex flex-wrap items-center gap-2 font-mono text-xs uppercase tracking-wide text-ink/70">
               <span>{date}</span>
               <span aria-hidden>·</span>
               <span>{post.readingTime} min read</span>
@@ -66,7 +66,7 @@ export default async function PostPage({ params }: PageProps) {
                 {post.tags.map((tag) => (
                   <span
                     key={tag}
-                    className="rounded-md border-2 border-ink bg-accent-yellow px-2 py-1 font-mono text-xs uppercase"
+                    className="rounded-md border-2 border-ink bg-accent-yellow px-2 py-1 font-mono text-xs uppercase text-on-accent"
                   >
                     {tag}
                   </span>

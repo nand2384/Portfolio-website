@@ -33,7 +33,7 @@ export function ProjectCard({
         <div className="flex items-start justify-between gap-3">
           <h3 className="font-heading text-xl font-bold">{project.title}</h3>
           {project.hasLiveDemo && (
-            <span className="shrink-0 rounded-md border-2 border-ink bg-accent-yellow px-2 py-0.5 font-mono text-xs uppercase">
+            <span className="shrink-0 rounded-md border-2 border-ink bg-accent-yellow px-2 py-0.5 font-mono text-xs uppercase text-on-accent">
               Live
             </span>
           )}

@@ -12,7 +12,7 @@ export function WorkHistory() {
     <section className="border-t-2 border-ink px-6 py-24">
       <div className="mx-auto max-w-3xl">
         <div className="mb-10 flex flex-col gap-2">
-          <p className="font-mono text-sm uppercase tracking-wide text-accent-coral">
+          <p className="font-mono text-sm uppercase tracking-wide text-label">
             Experience
           </p>
           <h2 className="font-heading text-3xl font-bold md:text-4xl">
@@ -36,10 +36,10 @@ export function WorkHistory() {
               className="relative"
             >
               <span className="absolute -left-[27px] top-1.5 h-3 w-3 rounded-full border-2 border-ink bg-accent-yellow" />
-              <p className="font-heading text-lg font-bold text-ink/60">
+              <p className="font-heading text-lg font-bold text-ink/70">
                 {entry.role}
               </p>
-              <p className="font-mono text-sm text-ink/50">
+              <p className="font-mono text-sm text-ink/70">
                 {entry.company} · {entry.dates}
               </p>
             </motion.li>

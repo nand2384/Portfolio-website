@@ -14,9 +14,9 @@ export function Hero() {
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ type: "spring", stiffness: 300, damping: 26 }}
-          className="flex items-center gap-2 rounded-full border-2 border-ink bg-accent-yellow px-4 py-1.5 font-mono text-xs uppercase tracking-wide"
+          className="flex items-center gap-2 rounded-full border-2 border-ink bg-accent-yellow px-4 py-1.5 font-mono text-xs uppercase tracking-wide text-on-accent"
         >
-          <span className="h-2 w-2 rounded-full bg-ink" />
+          <span className="h-2 w-2 rounded-full bg-current" />
           Available for work
         </motion.div>
 

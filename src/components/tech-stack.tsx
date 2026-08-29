@@ -25,7 +25,7 @@ export function TechStack() {
     <section id="stack" className="border-t-2 border-ink px-6 py-24">
       <div className="mx-auto max-w-5xl">
         <div className="mb-10 flex flex-col gap-2">
-          <p className="font-mono text-sm uppercase tracking-wide text-accent-coral">
+          <p className="font-mono text-sm uppercase tracking-wide text-label">
             Tech stack
           </p>
           <h2 className="font-heading text-3xl font-bold md:text-4xl">

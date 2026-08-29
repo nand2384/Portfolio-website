@@ -73,7 +73,7 @@ export function ContactSection() {
           className="flex flex-col gap-6"
         >
           <div className="flex flex-col gap-2">
-            <p className="font-mono text-sm uppercase tracking-wide text-accent-coral">
+            <p className="font-mono text-sm uppercase tracking-wide text-label">
               Contact
             </p>
             <h2 className="font-heading text-3xl font-bold md:text-4xl">
@@ -92,7 +92,7 @@ export function ContactSection() {
                 <div className="flex items-center gap-4 rounded-lg border-2 border-ink bg-card-mint px-4 py-3">
                   <Icon size={18} />
                   <div className="flex flex-col">
-                    <span className="font-mono text-xs uppercase tracking-wide text-ink/60">
+                    <span className="font-mono text-xs uppercase tracking-wide text-ink/70">
                       {info.label}
                     </span>
                     <span className="text-sm font-medium">{info.value}</span>
@@ -123,7 +123,7 @@ export function ContactSection() {
               href="/Nand_Patel_Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-4 rounded-lg border-2 border-ink bg-accent-yellow px-4 py-3 transition-transform hover:-translate-y-0.5"
+              className="flex items-center gap-4 rounded-lg border-2 border-ink bg-accent-yellow px-4 py-3 text-on-accent transition-transform hover:-translate-y-0.5"
             >
               <FileText size={18} />
               <span className="text-sm font-medium">Download resume</span>
@@ -154,7 +154,7 @@ export function ContactSection() {
                 name="name"
                 type="text"
                 required
-                className="rounded-lg border-2 border-ink bg-surface px-3 py-2 text-sm outline-none focus:border-accent-coral"
+                className="rounded-lg border-2 border-ink bg-surface px-3 py-2 text-sm outline-none focus:border-label"
                 placeholder="Your name"
               />
             </div>
@@ -167,7 +167,7 @@ export function ContactSection() {
                 name="email"
                 type="email"
                 required
-                className="rounded-lg border-2 border-ink bg-surface px-3 py-2 text-sm outline-none focus:border-accent-coral"
+                className="rounded-lg border-2 border-ink bg-surface px-3 py-2 text-sm outline-none focus:border-label"
                 placeholder="you@example.com"
               />
             </div>
@@ -182,7 +182,7 @@ export function ContactSection() {
               name="subject"
               type="text"
               required
-              className="rounded-lg border-2 border-ink bg-surface px-3 py-2 text-sm outline-none focus:border-accent-coral"
+              className="rounded-lg border-2 border-ink bg-surface px-3 py-2 text-sm outline-none focus:border-label"
               placeholder="Project inquiry"
             />
           </div>
@@ -196,7 +196,7 @@ export function ContactSection() {
               name="message"
               required
               rows={5}
-              className="resize-none rounded-lg border-2 border-ink bg-surface px-3 py-2 text-sm outline-none focus:border-accent-coral"
+              className="resize-none rounded-lg border-2 border-ink bg-surface px-3 py-2 text-sm outline-none focus:border-label"
               placeholder="Tell me about your project..."
             />
           </div>

@@ -13,10 +13,10 @@ export default function WritingPage() {
   return (
     <>
       <SiteNav />
-      <main className="px-6 pb-24 pt-32">
+      <main id="main-content" className="px-6 pb-24 pt-32">
         <div className="mx-auto max-w-5xl">
           <div className="mb-12 flex flex-col gap-2">
-            <p className="font-mono text-sm uppercase tracking-wide text-accent-coral">
+            <p className="font-mono text-sm uppercase tracking-wide text-label">
               Writing
             </p>
             <h1 className="font-heading text-4xl font-bold md:text-5xl">
@@ -26,7 +26,7 @@ export default function WritingPage() {
 
           {posts.length === 0 ? (
             <div className="flex flex-col items-start gap-2 rounded-xl border-2 border-dashed border-ink/40 p-8">
-              <p className="font-mono text-sm uppercase tracking-wide text-ink/50">
+              <p className="font-mono text-sm uppercase tracking-wide text-ink/70">
                 Coming soon
               </p>
               <p className="text-ink/70">

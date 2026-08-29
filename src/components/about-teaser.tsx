@@ -12,7 +12,7 @@ export function AboutTeaser() {
         transition={{ type: "spring", stiffness: 260, damping: 26 }}
         className="mx-auto flex max-w-3xl flex-col gap-4"
       >
-        <p className="font-mono text-sm uppercase tracking-wide text-accent-coral">
+        <p className="font-mono text-sm uppercase tracking-wide text-label">
           About
         </p>
         <h2 className="font-heading text-3xl font-bold md:text-4xl">

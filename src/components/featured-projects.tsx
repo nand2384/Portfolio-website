@@ -6,7 +6,7 @@ export function FeaturedProjects() {
     <section id="projects" className="border-t-2 border-ink px-6 py-24">
       <div className="mx-auto max-w-5xl">
         <div className="mb-12 flex flex-col gap-2">
-          <p className="font-mono text-sm uppercase tracking-wide text-accent-coral">
+          <p className="font-mono text-sm uppercase tracking-wide text-label">
             Featured work
           </p>
           <h2 className="font-heading text-3xl font-bold md:text-4xl">

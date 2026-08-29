@@ -13,10 +13,10 @@ export default function ProjectsPage() {
   return (
     <>
       <SiteNav />
-      <main className="px-6 pb-24 pt-32">
+      <main id="main-content" className="px-6 pb-24 pt-32">
         <div className="mx-auto max-w-5xl">
           <div className="mb-12 flex flex-col gap-2">
-            <p className="font-mono text-sm uppercase tracking-wide text-accent-coral">
+            <p className="font-mono text-sm uppercase tracking-wide text-label">
               Projects
             </p>
             <h1 className="font-heading text-4xl font-bold md:text-5xl">

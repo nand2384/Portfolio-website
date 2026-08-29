@@ -28,7 +28,7 @@ export function PostCard({ post, index = 0 }: { post: Post; index?: number }) {
         href={`/writing/${post.slug}`}
         className={`group flex h-full flex-col gap-3 rounded-xl border-2 border-ink p-6 shadow-[var(--shadow-hard)] transition-transform hover:-translate-y-1 ${cardColor}`}
       >
-        <div className="flex flex-wrap items-center gap-2 font-mono text-xs uppercase tracking-wide text-ink/60">
+        <div className="flex flex-wrap items-center gap-2 font-mono text-xs uppercase tracking-wide text-ink/70">
           <span>{date}</span>
           <span aria-hidden>·</span>
           <span>{post.readingTime} min read</span>

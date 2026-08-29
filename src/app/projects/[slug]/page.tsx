@@ -36,7 +36,7 @@ export default async function ProjectPage({ params }: PageProps) {
   return (
     <>
       <SiteNav />
-      <main className="px-6 pb-24 pt-32">
+      <main id="main-content" className="px-6 pb-24 pt-32">
         <div className="mx-auto max-w-3xl">
           <Link
             href="/projects"
